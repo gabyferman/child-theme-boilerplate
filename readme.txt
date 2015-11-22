@@ -30,4 +30,3 @@ Your copyright information
 * Released: 22. 11. 2015
 
 Initial release
-
