@@ -9,7 +9,7 @@ Tags: child theme
 
 == Description ==
 
-Childr theme for parent theme                       
+Child theme for parent theme                       
 
 == Installation ==
 
