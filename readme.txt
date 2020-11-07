@@ -24,6 +24,6 @@ Your copyright information
 == Changelog ==
 
 = 1.0 =
-* Released: 22. 11. 2015
+* Released: 1.11. 2020
 
 Initial release
