@@ -1,4 +1,4 @@
-=== Child Theme Boilerplate ===
+=== Child Theme ===
 Contributors: 
 Requires at least: WordPress 4.1
 Tested up to: WordPress 5.5

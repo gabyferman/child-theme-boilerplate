@@ -1,14 +1,10 @@
-/**
- * Theme Name:   Child Theme Boilerplate
- * Theme URI:    https://musilda.com
- * Description:  Child Theme Boilerplate
- * Author:       Musilda.com
- * Author URI:   https://musilda.com/
- * Template:     replace-by-parent-theme-directory-name (twentyfifteen for example)
- * Version:      1.0.0
- * Text Domain:	 child-theme-slug
- */
-
-/* ----------------------------------------------------------------------------
- * Add your Child Theme css styles 
- * ------------------------------------------------------------------------- */
+/*
+Theme Name:   Child Theme
+Theme URI:    http://www.theme.com/child/
+Description:  This is a child theme
+Author:       Jane Doe
+Author URI:   http://www.jane-doe.com
+Version:      1.0
+Text Domain:  child-theme-slug
+Template:     parent-theme-directory-name
+*/

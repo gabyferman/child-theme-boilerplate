@@ -1,30 +1,48 @@
 <?php
 /**
- *
- * Child Theme Functions
- * 
+ * Child Theme Functions.
  */
 
 /**
- *
- * Enqueue the parent style.css
- *
- * @since 1.0
+ * Register and enqueue child theme styles.
  */
-add_action( 'wp_enqueue_scripts', 'your_child_theme_enqueue_styles' );
-function your_child_theme_enqueue_styles() {
-
-    // Parent style id - replace your child theme name
+function child_theme_enqueue_styles() {
+    // Parent style id.
     $parent_style = 'parent-style';
-    
-    // Enqueue Parent theme's style
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 
-    // Enqueue Child theme's style 
-    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ) );
-    
-    
+    // Enqueue main chikd theme style.
+    wp_enqueue_style(
+        'child-style',
+        get_theme_file_uri('/css/child-style.css'),
+        [
+            $parent_style
+        ],
+        false
+    );
 }
+add_action('wp_enqueue_scripts', 'child_theme_enqueue_styles');
 
+/**
+ * Register and enqueue child theme scripts.
+ */
+function child_theme_enqueue_scripts() {
+    // Parent style id.
+    $parent_style = 'parent-style';
 
-//Start editing your function.php file
+    // Enqueue main chikd theme style.
+    wp_enqueue_script(
+        'child-functions',
+        get_theme_file_uri('/js/child-functions.js'),
+        [
+
+        ],
+        false,
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'child_theme_enqueue_scripts');
+
+// Custom functions for this theme.
+require_once get_theme_file_path() . '/inc/helpers.php';
+
+// Keep editing your function.php file
